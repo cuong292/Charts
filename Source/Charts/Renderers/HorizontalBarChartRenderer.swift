@@ -409,9 +409,7 @@ open class HorizontalBarChartRenderer: BarChartRenderer
                                 yPos: y + yOffset,
                                 font: valueFont,
                                 align: textAlign,
-                                color: dataSet.valueTextColorAt(j),
-                                anchor: CGPoint.zero,
-                                angleRadians: angleRadians)
+                                color: dataSet.valueTextColorAt(j))
                         }
                         
                         if let icon = e.icon, dataSet.isDrawIconsEnabled
@@ -489,9 +487,8 @@ open class HorizontalBarChartRenderer: BarChartRenderer
                                     yPos: rect.origin.y + yOffset,
                                     font: valueFont,
                                     align: textAlign,
-                                    color: dataSet.valueTextColorAt(index),
-                                    anchor: CGPoint.zero,
-                                    angleRadians: angleRadians)
+                                    color: dataSet.valueTextColorAt(index)
+                                   )
                             }
                             
                             if let icon = e.icon, dataSet.isDrawIconsEnabled
@@ -590,9 +587,8 @@ open class HorizontalBarChartRenderer: BarChartRenderer
                                               yPos: y + yOffset,
                                               font: valueFont,
                                               align: textAlign,
-                                              color: dataSet.valueTextColorAt(index),
-                                              anchor: CGPoint.zero,
-                                              angleRadians: angleRadians)
+                                              color: dataSet.valueTextColorAt(index)
+                                              )
                                 }
                                 
                                 if let icon = e.icon, dataSet.isDrawIconsEnabled
